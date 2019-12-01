@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Xavier Bouthillier"
 title_separator          : "-"
 name                     : &name "Xavier Bouthillier"
-description              : &description "personal description"
+description              : &description "PhD student and part-time research developper at Mila"
 url                      : https://bouthilx.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "bouthilx/bouthilx.github.io"
@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Xavier Bouthillier"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  bio              : "PhD student and part-time research developper at Mila."
+  location         : "Montreal, Canada"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=Vdt5o8YAAAAJ&hl=da"
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : # "replacethistwitterhandle"
+  twitter          : "bouthilx"
   vine             :
   weibo            :
   xing             :
