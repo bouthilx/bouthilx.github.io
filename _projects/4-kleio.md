@@ -26,5 +26,5 @@ The most distinctive feature of Kleiṓ is its inner data structure which is bas
 possible to fork experiments at arbitrary timestamps and build trees of alternative paths.
 For machine learning, think of changing the learning rate to different values at a given epoch m
 without starting from scratch. Kleiṓ will then provide a unified view of all experiments, 
-showing logs as if all the experiments were execute from epochs 1 to m. The same applies for
+showing logs as if all the experiments were executed from epochs 1 to m. The same applies for
 any other changes at resumption of execution such as the compute node or code version.
