@@ -1,0 +1,16 @@
+---
+title: "Track: Generic logger backend for machine learning"
+excerpt: "Track is a generic logger backend developped at Mila that can serve as a bridge between  different logging librairies for machine learning. The goal is to provide a backend for Oríon to that users can use their own logger without any modification and simply configure Oríon to use the proper bridge with Track."
+collection: projects
+---
+
+<b>Documentation</b> [track.readthedocs.io](https://track.readthedocs.io) <br/>
+<b>Source code</b> [github.com/Delaunay/track](https://github.com/Delaunay/track)
+
+Track is a generic logger backend developped at Mila that can serve as a bridge between 
+different logging librairies for machine learning. This has been so far the work of 
+[Pierre Delaunay](https://github.com/delaunay) with whom I collaborated ideas and as a reviewer.
+The goal is to provide a backend for 
+[Oríon](/projects/1-orion) to that users can use their own logger without any modification
+and simply configure Oríon to use the proper bridge with Track. We built it outside of Oríon
+so that it can be used alone by users or reused in other frameworks as well.

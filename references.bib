@@ -1,0 +1,260 @@
+%-------------------------------------------------------------------------------
+%	REPLACE WITH YOUR PUBLICATIONS
+%-------------------------------------------------------------------------------
+
+@article{kahou2016emonets,
+  title={Emonets: Multimodal deep learning approaches for emotion recognition in video},
+  author={Kahou, Samira Ebrahimi and Bouthillier, Xavier and Lamblin, Pascal and Gulcehre, Caglar and Michalski, Vincent and Konda, Kishore and Jean, S{\'e}bastien and Froumenty, Pierre and Dauphin, Yann and Boulanger-Lewandowski, Nicolas and others},
+  journal={Journal on Multimodal User Interfaces},
+  volume={10},
+  number={2},
+  pages={99--111},
+  month={june},
+  year={2016},
+  publisher={Springer},
+  url={https://arxiv.org/pdf/1503.01800},
+  abstract={The task of the Emotion Recognition in the Wild (EmotiW) Challenge is to assign one of
+            seven emotions to short video clips extracted from Hollywood style movies. The videos
+            depict acted-out emotions under realistic conditions with a large degree of variation in
+            attributes such as pose and illumination, making it worthwhile to explore approaches
+            which consider combinations of features from multiple modalities for label assignment.
+            In this paper we present our approach to learning several specialist models using deep
+            learning techniques, each focusing on one modality. Among these are a convolutional
+            neural network, focusing on capturing visual information in detected faces, a deep
+            belief net focusing on the representation of the audio stream, a K-Means based
+            “bag-of-mouths” model, which extracts visual features around the mouth region and a
+            relational autoencoder, which addresses spatio-temporal aspects of videos. We explore
+            multiple methods for the combination of cues from these modalities into one common
+            classifier. This achieves a considerably greater accuracy than predictions from our
+            strongest single-modality classifier. Our method was the winning submission in the 2013
+            EmotiW challenge and achieved a test set accuracy of 47.67 % on the 2014 dataset.}
+}
+
+@inproceedings{bouthillier2019unreproducible,
+  title={Unreproducible Research is Reproducible},
+  author={Bouthillier, Xavier and Laurent, C{\'e}sar and Vincent, Pascal},
+  booktitle={International Conference on Machine Learning},
+  pages={725--734},
+  month={may},
+  day={24},
+  year={2019},
+  url={http://proceedings.mlr.press/v97/bouthillier19a/bouthillier19a.pdf},
+  abstract={The apparent contradiction in the title is a wordplay on the different meanings
+            attributed to the word reproducible across different scientific fields. What we imply is
+            that unreproducible findings can be built upon reproducible methods. Without denying the
+            importance of facilitating the reproduction of methods, we deem important to reassert
+            that reproduction of findings is a fundamental step of the scientific inquiry. We argue
+            that the commendable quest towards easy deterministic reproducibility of methods and
+            numerical results should not have us forget the even more important necessity of
+            ensuring the reproducibility of empirical findings and conclusions by properly
+            accounting for essential sources of variations. We provide experiments to exemplify the
+            brittleness of current common practice in the evaluation of models in the field of deep
+            learning, showing that even if the results could be reproduced, a slightly different
+            experiment would not support the findings. We hope to help clarify the distinction
+            between exploratory and empirical research in the field of deep learning and believe
+            more energy should be devoted to proper empirical research in our community. This work
+            is an attempt to promote the use of more rigorous and diversified methodologies. It is
+            not an attempt to impose a new methodology and it is not a critique on the nature of
+            exploratory research.}
+}
+
+@inproceedings{george2018fast,
+  title={Fast approximate natural gradient descent in a kronecker factored eigenbasis},
+  author={George, Thomas and Laurent, C{\'e}sar and Bouthillier, Xavier and Ballas, Nicolas and Vincent, Pascal},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={9550--9560},
+  month={dec},
+  year={2018},
+  url={https://papers.nips.cc/paper/8164-fast-approximate-natural-gradient-descent-in-a-kronecker-factored-eigenbasis.pdf},
+  abstract={Optimization algorithms that leverage gradient covariance information, such as variants
+            of natural gradient descent (Amari, 1998), offer the prospect of yielding more effective
+            descent directions.  For models with many parameters, the covari- ance matrix they are
+            based on becomes gigantic, making them inapplicable in their original form. This has
+            motivated research into both simple diagonal approxima- tions and more sophisticated
+            factored approximations such as KFAC (Heskes, 2000; Martens & Grosse, 2015; Grosse &
+            Martens, 2016). In the present work we draw inspiration from both to propose a novel
+            approximation that is provably better than KFAC and amendable to cheap partial updates.
+            It consists in tracking a diagonal variance, not in parameter coordinates, but in a
+            Kronecker-factored eigenbasis, in which the diagonal approximation is likely to be more
+            effective.  Experiments show improvements over KFAC in optimization speed for several
+            deep network architectures.}
+}
+
+@inproceedings{vincent2015efficient,
+  title={Efficient exact gradient update for training deep networks with very large sparse targets},
+  author={Vincent, Pascal and De Br{\'e}bisson, Alexandre and Bouthillier, Xavier},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={1108--1116},
+  month={dec},
+  year={2015},
+  url={https://papers.nips.cc/paper/5865-efficient-exact-gradient-update-for-training-deep-networks-with-very-large-sparse-targets.pdf},
+  abstract={An important class of problems involves training deep neural networks with sparse
+            prediction targets of very high dimension D. These occur naturally in e.g. neural
+            language models or the learning of word-embeddings, often posed as predicting the
+            probability of next words among a vocabulary of size D (e.g. 200,000). Computing the
+            equally large, but typically non-sparse D-dimensional output vector from a last hidden
+            layer of reasonable dimension d (e.g. 500) incurs a prohibitive O(Dd) computational cost
+            for each example, as does updating the Dxd output weight matrix and computing the
+            gradient needed for backpropagation to previous layers. While efficient handling of
+            large sparse network inputs is trivial, this case of large sparse targets is not, and
+            has thus so far been sidestepped with approximate alternatives such as hierarchical
+            softmax or sampling-based approximations during training. In this work we develop an
+            original algorithmic approach that, for a family of loss functions that includes squared
+            error and spherical softmax, can compute the exact loss, gradient update for the output
+            weights, and gradient for backpropagation, all in O(d^2) per example instead of O(Dd),
+            remarkably without ever computing the D-dimensional output. The proposed algorithm
+            yields a speedup of D/4d, i.e. two orders of magnitude for typical sizes, for that
+            critical part of the computations that often dominates the training time in this kind of
+            network architecture.}
+}
+
+
+@inproceedings{kahou2013combining,
+  title={Combining modality specific deep neural networks for emotion recognition in video},
+  author={Kahou, Samira Ebrahimi and Pal, Christopher and Bouthillier, Xavier and Froumenty, Pierre and G{\"u}l{\c{c}}ehre, {\c{C}}aglar and Memisevic, Roland and Vincent, Pascal and Courville, Aaron and Bengio, Yoshua and Ferrari, Raul Chandias and others},
+  booktitle={Proceedings of the 15th ACM on International conference on multimodal interaction},
+  pages={543--550},
+  month={dec},
+  year={2013},
+  organization={ACM},
+  url={http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.699.3422&rep=rep1&type=pdf},
+  abstract={In this paper we present the techniques used for the University of Montréal's team
+            submissions to the 2013 Emotion Recognition in the Wild Challenge. The challenge is to
+            classify the emotions expressed by the primary human subject in short video clips
+            extracted from feature length movies. This involves the analysis of video clips of acted
+            scenes lasting approximately one-two seconds, including the audio track which may
+            contain human voices as well as background music. Our approach combines multiple deep
+            neural networks for different data modalities, including: (1) a deep convolutional
+            neural network for the analysis of facial expressions within video frames; (2) a deep
+            belief net to capture audio information; (3) a deep autoencoder to model the
+            spatio-temporal information produced by the human actions depicted within the entire
+            scene; and (4) a shallow network architecture focused on extracted features of the mouth
+            of the primary human subject in the scene. We discuss each of these techniques, their
+            performance characteristics and different strategies to aggregate their predictions. Our
+            best single model was a convolutional neural network trained to predict emotions from
+            static frames using two large data sets, the Toronto Face Database and our own set of
+            faces images harvested from Google image search, followed by a per frame aggregation
+            strategy that used the challenge training data. This yielded a test set accuracy of
+            35.58%. Using our best strategy for aggregating our top performing models into a single
+            predictor we were able to produce an accuracy of 41.03% on the challenge test set. These
+            compare favorably to the challenge baseline test set accuracy of 27.56%.}
+}
+
+@inproceedings{tsirigotis2018orion,
+  title={Or{\'\i}on: Experiment Version Control for Efficient Hyperparameter Optimization},
+  author={Tsirigotis, Christos and Bouthillier, Xavier and Corneau-Tremblay, Fran{\c{c}}ois and Henderson, Peter and Askari, Reyhane and Lavoie-Marchildon, Samuel and Deleu, Tristan and Suhubdy, Dendi and Noukhovitch, Michael and Bastien, Fr{\'e}d{\'e}ric and others},
+  booktitle={AutoML Workshop at the International Conference on Machine Learning},
+  month={july},
+  year={2018},
+  URL={https://openreview.net/forum?id=r1xkNLPixX},
+  excerpt={We present Oríon, a black-box optimization tool designed to adapt to the workflow of
+           machine learning researchers, promoting reproducibility, fair benchmarking, and providing
+           a platform for the research of black-box optimization algorithms.},
+  abstract={We present Oríon, a new black-box optimization tool currently in development that is
+           designed to adapt to the workflow of machine learning researchers for minimal
+           obstruction. We propose a new version control system for experiments, which can
+           significantly improve the organization of research projects in machine learning as well
+           as the efficiency of hyperparameter optimization. The entire tool is built with the goals
+           of promoting reproducibility, fair benchmarking of different machine learning models, and
+           providing a platform for the research of black-box optimization algorithms.}
+}
+
+
+@inproceedings{bouthillier2019benchmark,
+  title={Improving Reproducibility of Benchmarks},
+  author={Bouthillier, Xavier},
+  booktitle={CiML Workshop at Advances in Neural Information Processing Systems},
+  month={dec},
+  year={2019},
+  url={http://ciml.chalearn.org/ciml2019/accepted/Bouthillier.pdf},
+  abstract={todo}
+}
+
+@inproceedings{laurent2018evaluation,
+  title={An evaluation of fisher approximations beyond kronecker factorization},
+  author={Laurent, C{\'e}sar and George, Thomas and Bouthillier, Xavier and Ballas, Nicolas and Vincent, Pascal},
+  booktitle={Workshop at International Conference on Learning Representations},
+  month={may},
+  year={2018},
+  url={https://openreview.net/pdf?id=ryVC6tkwG},
+  excerpt={We study two coarser approximations on top of a Kronecker factorization of the Fisher
+           information matrix, to scale up Natural Gradient to deep and wide Convolutional Neural
+           Networks},
+  abstract={We study two coarser approximations on top of a Kronecker factorization (K-FAC) of the
+            Fisher information matrix, to scale up Natural Gradient to deep and wide Convolutional
+            Neural Networks (CNNs). The first considers the activations (feature maps) as spatially
+            uncorrelated while the second considers only correlations among groups of channels. Both
+            variants yield a further block-diagonal approximation tailored for CNNs, which is much
+            more efficient to compute and invert. Experiments on the VGG11 and ResNet50
+            architectures show the technique can substantially speed up both K-FAC and a baseline
+            with Batch Normalization in wall-clock time, yielding faster convergence to similar or
+            better generalization error.}
+}
+
+@article{vincent2016exact,
+  title={Exact gradient updates in time independent of output size for the spherical loss family},
+  author={Vincent, Pascal and de Br{\'e}bisson, Alexandre and Bouthillier, Xavier},
+  journal={arXiv preprint arXiv:1606.08061},
+  month={june},
+  year={2016},
+  url={https://arxiv.org/pdf/1606.08061.pdf},
+  abstract={An important class of problems involves training deep neural networks with sparse
+            prediction targets of very high dimension D. These occur naturally in e.g. neural
+            language models or the learning of word-embeddings, often posed as predicting the
+            probability of next words among a vocabulary of size D (e.g. 200,000). Computing the
+            equally large, but typically non-sparse D-dimensional output vector from a last hidden
+            layer of reasonable dimension d (e.g. 500) incurs a prohibitive O(Dd) computational cost
+            for each example, as does updating the D×d output weight matrix and computing the
+            gradient needed for backpropagation to previous layers. While efficient handling of
+            large sparse network inputs is trivial, the case of large sparse targets is not, and has
+            thus so far been sidestepped with approximate alternatives such as hierarchical softmax
+            or sampling-based approximations during training. In this work we develop an original
+            algorithmic approach which, for a family of loss functions that includes squared error
+            and spherical softmax, can compute the exact loss, gradient update for the output
+            weights, and gradient for backpropagation, all in O(d2) per example instead of O(Dd),
+            remarkably without ever computing the D-dimensional output. The proposed algorithm
+            yields a speedup of up to D/4d i.e. two orders of magnitude for typical sizes, for that
+            critical part of the computations that often dominates the training time in this kind of
+            network architecture.},
+}
+
+@article{team2016theano,
+  title={Theano: A Python framework for fast computation of mathematical expressions},
+  author={Team, The Theano Development and Al-Rfou, Rami and Alain, Guillaume and Almahairi, Amjad
+          and Angermueller, Christof and Bahdanau, Dzmitry and Ballas, Nicolas and Bastien,
+          Fr{\'e}d{\'e}ric and Bayer, Justin and Belikov, Anatoly and others},
+  journal={arXiv preprint arXiv:1605.02688},
+  url={https://arxiv.org/pdf/1605.02688},
+  month={may},
+  year={2016},
+  abstract={Theano is a Python library that allows to define, optimize, and evaluate mathematical
+            expressions involving multi-dimensional arrays efficiently. Since its introduction, it
+            has been one of the most used CPU and GPU mathematical compilers - especially in the
+            machine learning community - and has shown steady performance improvements. Theano is
+            being actively and continuously developed since 2008, multiple frameworks have been
+            built on top of it and it has been used to produce many state-of-the-art machine
+            learning models.  The present article is structured as follows. Section I provides an
+            overview of the Theano software and its community. Section II presents the principal
+            features of Theano and how to use them, and compares them with other similar projects.
+            Section III focuses on recently-introduced functionalities and improvements. Section IV
+            compares the performance of Theano against Torch7 and TensorFlow on several machine
+            learning models. Section V discusses current limitations of Theano and potential ways of
+            improving it.}
+}
+
+@article{bouthillier2015dropout,
+  title={Dropout as data augmentation},
+  author={Bouthillier, Xavier and Konda, Kishore and Vincent, Pascal and Memisevic, Roland},
+  journal={arXiv preprint arXiv:1506.08700},
+  month={june},
+  year={2015},
+  url={https://arxiv.org/pdf/1506.08700},
+  abstract={Dropout is typically interpreted as bagging a large number of models sharing parameters.
+            We show that using dropout in a network can also be interpreted as a kind of data
+            augmentation in the input space without domain knowledge. We present an approach to
+            projecting the dropout noise within a network back into the input space, thereby
+            generating augmented versions of the training data, and we show that training a
+            deterministic network on the augmented samples yields similar results. Finally, we
+            propose a new dropout noise scheme based on our observations and show that it improves
+            dropout results without adding significant computational cost.}
+}

@@ -1,0 +1,147 @@
+#!/usr/bin/env python
+import copy
+import io
+
+import bibtexparser
+from bibtexparser.bwriter import BibTexWriter
+from bibtexparser.bibdatabase import BibDatabase
+
+
+def get_bibtex(entry):
+    db = BibDatabase()
+    entry = copy.deepcopy(entry)
+    entry.pop('abstract')
+    entry.pop('excerpt', None)
+    db.entries = [entry]
+
+    writer = BibTexWriter()
+    writer.indent = '    '
+    with io.StringIO() as f:
+        f.write(writer.write(db))
+        f.seek(0)
+        bibtex = f.read()
+
+    return '\n'.join('    ' + line for line in bibtex.split('\n'))
+
+
+import pprint
+
+def build_posts(): 
+
+    with open('talks.bib') as bibtex_file:
+        bib_database = bibtexparser.load(bibtex_file)
+
+    for entry in bib_database.entries:
+        pprint.pprint(entry)
+        write_post(entry)
+
+
+def parse_title(title):
+    parsed = title.lower().replace(' ', '-').replace(':', '-')
+    parsed = parsed.replace("{\\'\\i}", 'i')
+    parsed_trimmed = []
+    for word in parsed.split('-'):
+        parsed_trimmed.append(word)
+        if len('-'.join(parsed_trimmed)) > 20:
+            break
+    return '-'.join(parsed_trimmed)
+
+
+months = ['jan', 'feb', 'march', 'april', 'may', 'june', 'july', 'aug', 'sep', 'oct', 'nov', 'dec']
+
+
+def parse_date(entry):
+    year = entry['year']
+    month = months.index(entry['month']) + 1
+    day = int(entry.get('day', 1))
+    return f'{year}-{month:02d}-{day:02d}'
+
+
+def get_post_path(entry):
+    title_url = parse_title(entry['title'])
+    date = entry['date']
+    post_path = f'{date}-{title_url}'
+    return post_path
+
+
+def write_post(entry):
+    post_url = get_post_path(entry)
+
+    print(entry.keys())
+
+    file_content = template.format(
+        entry=entry,
+        post_url=post_url)
+
+    with open(f'_talks/{post_url}.md', 'w') as f:
+        f.write(file_content)
+
+
+def infer_paper_type(entry):
+    if entry['ENTRYTYPE'] == 'article' and 'arxiv' in entry.get('journal', '').lower():
+        return 'report'
+    if entry['ENTRYTYPE'] == 'article':
+        return 'journal'
+    if 'workshop' in entry.get('booktitle', '').lower():
+        return 'workshop'
+
+    return 'conference'
+
+
+def replace_special_chars(string):
+    special_chars = [
+        ("{\\'e}", 'é'),
+        ('{\\"u}', 'ü'),
+        ('{\\c{c}}', 'ç'),
+        ('{\\c{C}}', 'Ç'),
+        ("{\\'\\i}", 'í')
+    ]
+    for a, b in special_chars:
+        string = string.replace(a, b)
+
+    return string
+
+
+def parse_authors(authors):
+    parsed_authors = []
+    print(authors)
+    for author in authors.replace('\n', ' ').split(' and '):
+        author = author.split(', ')
+        if len(author) == 1 and author[0] == 'others':
+            parsed_authors.append('others')
+            break
+        parsed_author = f'{author[1]} {author[0]}'
+        parsed_author = replace_special_chars(parsed_author)
+        parsed_authors.append(parsed_author)
+
+    if len(parsed_authors) == 1:
+        return parsed_authors[0]
+
+    authors = ', '.join(parsed_authors[:-1])
+    return f'{authors} and {parsed_authors[-1]}'
+
+
+def get_venue(entry):
+    return entry.get('journal', entry.get('booktitle', ''))
+
+
+template = """\
+---
+title: "{entry[title]}"
+collection: talks
+type: '{entry[type]}'
+permalink: /talks/{post_url}
+excerpt: 'Add except...'
+date: {entry[date]}
+location: {entry[location]}
+organization: {entry[organization]}
+recording: {entry[recording]}
+slides: {entry[slides]}
+---
+
+{entry[abstract]}
+"""
+
+
+if __name__ == '__main__':
+    build_posts()

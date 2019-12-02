@@ -35,12 +35,18 @@ layout: default
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Date:</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
         {% endif %}
-        {% if page.talk_type %}<p>{{page.talk_type}} at {{ page.venue }},  {{page.location}} {% endif %}
+        <p class="archive__item-excerpt" itemprop="description">
+          {{page.type}} organized by {{page.organization}}, {{page.location}}
+        </p>
 
         </header>
       {% endunless %}
 
       <section class="page__content" itemprop="text">
+        <div>
+          {% if page.recording %}<a href="https://{{ page.recording}}" class="btn">Recording</a>{% endif %}
+          {% if page.slides %}<a href="https://{{ page.slides}}" class="btn">Slides</a>{% endif %}
+        </div>
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
