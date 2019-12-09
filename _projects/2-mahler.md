@@ -6,7 +6,7 @@ collection: projects
 
 <b>Source code</b> [github.com/bouthilx/mahler](https://github.com/bouthilx/mahler)
 
-This project is still a prototype. There is no documentation and no testing.
+This project is still a prototype. There is no documentation and no testing yet.
 {: .notice}
 
 For my research projects I developped a framework to automatically setup all available clusters and 
