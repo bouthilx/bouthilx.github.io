@@ -1,6 +1,6 @@
 ---
 title: "Track: Generic logger backend for machine learning"
-excerpt: "Track is a generic logger backend developped at Mila that can serve as a bridge between  different logging librairies for machine learning. The goal is to provide a backend for Oríon to that users can use their own logger without any modification and simply configure Oríon to use the proper bridge with Track."
+excerpt: "Track is a generic logger backend developed at Mila that can serve as a bridge between different logging libraries for machine learning. The goal is to provide a backend for Oríon so that users can use their own logger without any modification and simply configure Oríon to use the proper bridge with Track."
 collection: projects
 ---
 

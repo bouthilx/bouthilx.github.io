@@ -1,6 +1,6 @@
 ---
 title: "Mahler: Orchestration engine for high latency systems and dynamic workflows"
-excerpt: "For my research projects I developped a framework to automatically setup all available clusters and deploy my experiments. With Mahler, I can wrap the super computer schedulers to gain more control over my workflow, better resiliency and better automation."
+excerpt: "For my research projects I developed a framework to automatically set up all available clusters and deploy my experiments. With Mahler, I can wrap the super computer schedulers to gain more control over my workflow, better resiliency, and better automation."
 collection: projects
 ---
 

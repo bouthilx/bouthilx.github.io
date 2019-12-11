@@ -1,6 +1,6 @@
 ---
 title: "Kleiṓ: Experiment management for machine learning"
-excerpt: "Kleiṓ is an experiment manager, a logging journal of all data describing your experiments. Its purpose is to provide an automatic tool to log extensive environment information, including script's code version, system specification and script configuration."
+excerpt: "Kleiṓ is an experiment manager, a logging journal of all data describing your experiments. Its purpose is to provide an automatic tool to log extensive environment information, including a script’s code version, system specification, and script configuration."
 collection: projects
 ---
 

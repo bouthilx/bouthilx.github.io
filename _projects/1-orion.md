@@ -1,6 +1,6 @@
 ---
 title: "Oríon: A framework for distributed hyperparameter optimisation"
-excerpt: "I am the lead developper of Oríon, an open-source framework developed at Mila for distributed black-box optimization. Its purpose is to serve as a meta-optimizer for machine learning models and training, as well as a flexible experimentation platform for large scale asynchronous optimization procedures."
+excerpt: "I am the lead developer of Oríon, an open-source framework developed at Mila for distributed black-box optimization. Its purpose is to serve as a meta-optimizer for machine learning models and training, as well as a flexible experimentation platform for large-scale asynchronous optimization procedures."
 collection: projects
 ---
 
