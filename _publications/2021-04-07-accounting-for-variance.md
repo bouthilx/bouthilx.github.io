@@ -26,7 +26,9 @@ leads us to propose recommendations for future performance comparisons.  This pa
 number 1. The number 2 is left for future work.
 
 Oral: https://youtu.be/-bukIBTkQiM
+
 Poster video: https://youtu.be/ZE2WLeavnEY
+
 Twitter: shorturl.at/hvxI2
 
 BibTeX:
