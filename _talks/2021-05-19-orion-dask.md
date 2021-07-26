@@ -7,6 +7,6 @@ excerpt: 'Add except...'
 date: 2021-05-19
 location: Remote
 organization: Dask Summit 2021
-recording: to come
+recording: https://youtu.be/W5oWdRiSSr8
 slides: shorturl.at/pszLU
 ---
