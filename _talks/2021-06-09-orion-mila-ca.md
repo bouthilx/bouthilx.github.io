@@ -8,5 +8,5 @@ date: 2021-06-09
 location: Remote
 organization: Mila
 recording:
-slides: https://docs.google.com/presentation/d/1vlUWzKiuP-_9HtM10PA0gK0ShUJkAmLNV0ZQQrE0n_s/edit?usp=sharing
+slides: docs.google.com/presentation/d/1vlUWzKiuP-_9HtM10PA0gK0ShUJkAmLNV0ZQQrE0n_s/edit?usp=sharing
 ---
