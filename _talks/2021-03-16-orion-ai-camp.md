@@ -8,5 +8,5 @@ date: 2021-03-16
 location: Remote
 organization: AICamp
 recording: https://youtu.be/QQ69vxF3LTI
-slides: shorturl.at/bszET
+slides: https://docs.google.com/presentation/d/1Tq3KrWcp66wdlZJtCFaxfq1m5ydyhcPiDCGCOuh_REg/edit?usp=sharing
 ---

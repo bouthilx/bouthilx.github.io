@@ -8,5 +8,5 @@ date: 2021-07-14
 location: Remote
 organization: SciPy
 recording: https://youtu.be/H1jQBQIbQmA
-slides: shorturl.at/iETU0
+slides: https://docs.google.com/presentation/d/1Aekt1hKtiT1y7pyvWeRRoVND4cDUYFj53xAzk8Zb8z0/edit?usp=sharing
 ---

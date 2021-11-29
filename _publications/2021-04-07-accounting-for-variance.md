@@ -29,7 +29,7 @@ Oral: https://youtu.be/-bukIBTkQiM
 
 Poster video: https://youtu.be/ZE2WLeavnEY
 
-Twitter: shorturl.at/hvxI2
+Twitter: https://twitter.com/gaelvaroquaux/status/1367839174469029899
 
 BibTeX:
 

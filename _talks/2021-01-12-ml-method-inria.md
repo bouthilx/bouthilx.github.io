@@ -8,5 +8,5 @@ date: 2021-01-12
 location: Remote
 organization: Parietal, INRIA
 recording: 
-slides: shorturl.at/clCS4
+slides: https://docs.google.com/presentation/d/17vXWqxaoSSGKKs58UznuOsy0uckk1vjMdQg9jOWDhnU/edit?usp=sharing
 ---

@@ -8,5 +8,5 @@ date: 2021-05-19
 location: Remote
 organization: Dask Summit 2021
 recording: https://youtu.be/W5oWdRiSSr8
-slides: shorturl.at/pszLU
+slides: https://docs.google.com/presentation/d/1MBy0gjWNV-8GjtEXVLCThN8JddK7znHSg7puycwkBZ4/edit?usp=sharing
 ---

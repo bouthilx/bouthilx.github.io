@@ -8,5 +8,5 @@ date: 2021-03-10
 location: Remote
 organization: Vector & Mila @ CIFAR
 recording: 
-slides: shorturl.at/eoCEO
+slides: https://docs.google.com/presentation/d/1KObkzjVVl2W6jrNMkq5oFh7faT7s4pvBxDxP-ZvDiyw/edit?usp=sharing
 ---
