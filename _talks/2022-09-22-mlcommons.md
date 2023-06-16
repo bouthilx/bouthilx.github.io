@@ -8,5 +8,5 @@ date: 2022-09-22
 location: Remote
 organization: MLCommons
 recording:
-slides: https://docs.google.com/presentation/d/1sl4IxT3EoFaHS4SHiof-jvNP6P5xsV5IK2MN-ZukEbc/edit?usp=sharing
+slides: 'docs.google.com/presentation/d/1sl4IxT3EoFaHS4SHiof-jvNP6P5xsV5IK2MN-ZukEbc/edit?usp=sharing'
 ---

@@ -7,6 +7,6 @@ excerpt: 'Add except...'
 date: 2022-11-30
 location: Udem, Montréal
 organization: IFT3395/6390/6758, Udem
-recording: https://classe.iro.umontreal.ca/w/jhsqQefUd9sQKDKW3ZUCgX
-slides: https://docs.google.com/presentation/d/1S4QqhALZdXqaKIDbMHbs1MTMWw0O0KJES_dBjx3GY60/edit?usp=sharing
+recording: 'classe.iro.umontreal.ca/w/jhsqQefUd9sQKDKW3ZUCgX'
+slides: 'docs.google.com/presentation/d/1S4QqhALZdXqaKIDbMHbs1MTMWw0O0KJES_dBjx3GY60/edit?usp=sharing'
 ---
