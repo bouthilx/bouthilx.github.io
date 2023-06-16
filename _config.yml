@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Xavier Bouthillier"
 title_separator          : "-"
 name                     : &name "Xavier Bouthillier"
-description              : &description "PhD student and full-time research developer at <a style='color: black;' href='http://mila.quebec'>Mila</a>, lead developer of <a style='color: black;' href='http://github.com/Epistimio/orion'>Oríon</a>."
+description              : &description "Research Scientist at <a style='color: black;' href='http://mila.quebec'>Mila</a>, Co-founder and lead developer of <a style='color: black;' href='http://github.com/Epistimio/orion'>Oríon</a>."
 url                      : https://bouthilx.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "bouthilx/bouthilx.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Xavier Bouthillier"
   avatar           : "IMG_0012.png"
-  bio              : "PhD student and full-time research developer at <a style='color: black;' href='http://mila.quebec'>Mila</a>, lead developer of <a style='color: black;' href='http://github.com/Epistimio/orion'>Oríon</a>."
+  bio              : "Research Scientist at <a style='color: black;' href='http://mila.quebec'>Mila</a>, Co-founder and lead developer of <a style='color: black;' href='http://github.com/Epistimio/orion'>Oríon</a>."
   location         : "Montreal, Canada"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"

@@ -8,5 +8,5 @@ date: 2022-05-09
 location: Remote
 organization: CScience, École Secondaire Félix-Leclerc
 recording:
-slides: 
+slides: https://docs.google.com/presentation/d/1S4QqhALZdXqaKIDbMHbs1MTMWw0O0KJES_dBjx3GY60/edit?usp=sharing
 ---
