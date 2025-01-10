@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Xavier Bouthillier"
 title_separator          : "-"
 name                     : &name "Xavier Bouthillier"
-description              : &description "Research Scientist at <a style='color: black;' href='http://mila.quebec'>Mila</a>, Co-founder and lead developer of <a style='color: black;' href='http://github.com/Epistimio/orion'>Oríon</a>."
+description              : &description "Research Scientist at <a style='color: black;' href='http://mila.quebec'>Mila</a>." #, Co-founder and lead developer of <a style='color: black;' href='http://github.com/Epistimio/orion'>Oríon</a>."
 url                      : https://bouthilx.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "bouthilx/bouthilx.github.io"
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "bouthilx"
+  twitter          : # "bouthilx"
   vine             :
   weibo            :
   xing             :
